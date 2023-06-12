@@ -2,6 +2,7 @@ package com.vinicius.Orders;
 
 import com.vinicius.Orders.entities.Order;
 import com.vinicius.Orders.services.impl.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,6 +14,7 @@ import java.util.Scanner;
 @SpringBootApplication
 public class OrdersApplication implements CommandLineRunner {
 
+	@Autowired
 	private OrderService orderService;
 
 	public static void main(String[] args) {
