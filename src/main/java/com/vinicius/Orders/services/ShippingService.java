@@ -1,7 +1,9 @@
 package com.vinicius.Orders.services;
 
-import org.springframework.stereotype.Component;
 
-@Component
-public class ShippingService {
+import com.vinicius.Orders.entities.Order;
+
+public interface ShippingService {
+        Double shipment(Order order);
 }
+
